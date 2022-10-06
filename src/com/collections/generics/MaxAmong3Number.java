@@ -2,12 +2,6 @@ package com.collections.generics;
 
 public class MaxAmong3Number<T> {
 	T num1, num2, num3;
-	public MaxAmong3Number(T num1, T num2, T num3)
-	{
-		this.num1 = num1;
-		this.num2 = num2;
-		this.num3 = num3;
-	}
 	public static <T extends Comparable<T>> T maxAmong3Number(T num1, T num2, T num3)
 	{
 		T max = num1;
@@ -20,8 +14,8 @@ public class MaxAmong3Number<T> {
 		return max;
 	}
 	public static void main(String[] args) {
-		System.out.println("The max Number Among 3 String numbers is: "+maxAmong3Number("Apple", "Peach", "Banana"));
-		System.out.println("The max Number Among 3 Integer numbers is: "+maxAmong3Number(15,22,27));
+		System.out.println("The max Number Among 3 String numbers is: "+maxAmong3Number("Apple", "Dragonfruit", "Banana"));
+		System.out.println("The max Number Among 3 Integer numbers is: "+maxAmong3Number(1504,22,27));
 		System.out.println("The max Number Among 3 Float numbers is: "+maxAmong3Number(32.5f,56.98f,78.99f));
 	}
 }
